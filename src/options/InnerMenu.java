@@ -29,13 +29,35 @@ public class InnerMenu {
 				e.printStackTrace();
 			}
 			switch(opt) {
-				case 1: System.out.println("Add a File");
+			case 1: {
+				Case1 c1 = new Case1();
+				boolean enter = c1.call();
+				while(enter == true) {
+					c1 = new Case1();
+					enter = c1.callHelp();
+				}
+			}
 				break;
 				
-				case 2: System.out.println("Delete a File");
-				break;
+			case 2: {
 				
-				case 3: System.out.println("Search a File");
+				Case2 c2 = new Case2();
+				boolean enter = c2.call();
+				while(enter == true) {
+					c2 = new Case2();
+					enter = c2.callHelp();
+				}
+			}
+				break;
+			
+			case 3: {
+				Case3 c3 = new Case3();
+				boolean enter = c3.call();
+				while(enter == false) {
+					c3 = new Case3();
+					enter = c3.callHelp();
+				}
+			}
 				break;
 				
 				case 4: {
